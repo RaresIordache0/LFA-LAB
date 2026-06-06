@@ -1,0 +1,22 @@
+[alphabet] 
+    0 1
+
+[states]
+    q_0
+    q_1
+    q_2
+// comment
+
+
+//exemplu string care se termina in "10":
+[transitions]
+    q_0 -> 0 -> q_0
+    q_0 -> 1 -> q_1
+    q_1 -> 0 -> q_2
+    q_1 -> 1 -> q_1
+    q_2 -> 0 -> q_0
+    q_2 -> 1 -> q_1
+[final states]
+    q_2
+[initial state]
+    q_0

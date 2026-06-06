@@ -1,0 +1,18 @@
+[alphabet] 
+    0 1
+
+[states]
+    q_0
+    q_1
+    q_2
+    q_3
+// ofwenviuewviub
+//testing
+[transitions]
+    q_0 -> 0 -> q_1,q_2
+    q_1 -> 1 -> q_3
+    q_3 -> 0 -> q_0
+[final states]
+    q_0
+[initial state]
+    q_1

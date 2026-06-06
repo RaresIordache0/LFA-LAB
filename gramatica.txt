@@ -1,0 +1,21 @@
+[Sigma]
+the,a,man,woman,child,dog,cat,sees,likes,hears,runs,sleeps
+
+//  S- SENTENCE = NP( NOUN PHRASE) + VP(VERB PHRASE)
+// V - VERB , N-NOUN, D-ARTICLE
+[Var]
+S,NP,VP,V,N,ART
+
+
+[Sub]
+S->NP VP
+
+NP->ART N|N
+
+VP->V NP|V
+
+ART->the|a
+
+N->man|woman|child|dog|cat
+
+V->sees|likes|hears|runs|sleeps
